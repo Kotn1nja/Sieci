@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Procesy produkcyjne elektroniki</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        body{
+            padding-top:80px;
+            background-color:#f8f9fa;
+        }
+
+        header{
+            padding:80px 0;
+            background:white;
+        }
+
+        .section-line{
+            width:260px;
+            height:4px;
+            background:black;
+            margin-bottom:30px;
+            border-radius:10px;
+        }
+
+        .card{
+            border:none;
+            border-radius:20px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.08);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<nav class="navbar navbar-light bg-light fixed-top border-bottom">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            Procesy produkcyjne elektroniki
+        </a>
+
+        <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- MENU BOCZNE -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menu">
+
+    <div class="offcanvas-header">
+
+        <h5 class="offcanvas-title">
+            Menu
+        </h5>
+
+        <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+        ></button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#wprowadzenie">
+                    Wprowadzenie
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#pcb">
+                    Produkcja PCB
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#uklady">
+                    Produkcja układów scalonych
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#montaz">
+                    Montaż elektroniki
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#testy">
+                    Testowanie urządzeń
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="container text-center">
+
+        <h1 class="display-4 fw-bold">
+            Procesy produkcyjne elektroniki
+        </h1>
+
+        <p class="lead mt-4">
+            Technologie wykorzystywane podczas tworzenia nowoczesnych urządzeń elektronicznych i sieci komputerowych.
+        </p>
+
+    </div>
+
+</header>
+
+<!-- WPROWADZENIE -->
+
+<section id="wprowadzenie" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Wprowadzenie
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Produkcja nowoczesnej elektroniki wymaga bardzo precyzyjnych technologii oraz specjalistycznych materiałów.
+            </p>
+
+            <p>
+                Procesy produkcyjne obejmują tworzenie płytek PCB, układów scalonych, montaż komponentów oraz testowanie urządzeń elektronicznych.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PCB -->
+
+<section id="pcb" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Produkcja PCB
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Płytki PCB są podstawą większości urządzeń elektronicznych. Produkowane są z włókna szklanego, żywic epoksydowych oraz cienkich warstw miedzi.
+            </p>
+
+            <p>
+                Podczas produkcji wykorzystuje się procesy trawienia chemicznego oraz fotolitografii.
+            </p>
+
+            <ul>
+                <li>włókno szklane</li>
+                <li>żywice epoksydowe</li>
+                <li>ścieżki miedziane</li>
+                <li>fotolitografia</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- UKŁADY -->
+
+<section id="uklady" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Produkcja układów scalonych
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Układy scalone produkowane są na specjalnych waflach krzemowych w bardzo sterylnych warunkach laboratoryjnych.
+            </p>
+
+            <p>
+                Proces produkcji obejmuje nanoszenie cienkich warstw materiałów oraz tworzenie miniaturowych tranzystorów.
+            </p>
+
+            <ul>
+                <li>wafle krzemowe</li>
+                <li>tranzystory</li>
+                <li>litografia UV</li>
+                <li>nanotechnologia</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MONTAŻ -->
+
+<section id="montaz" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Montaż elektroniki
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Komponenty elektroniczne montowane są automatycznie na płytkach PCB przy użyciu technologii SMT.
+            </p>
+
+            <p>
+                Specjalne roboty umieszczają mikroelementy z bardzo dużą dokładnością.
+            </p>
+
+            <ul>
+                <li>technologia SMT</li>
+                <li>automatyczne maszyny</li>
+                <li>lutowanie elementów</li>
+                <li>precyzyjny montaż</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TESTY -->
+
+<section id="testy" class="py-5 mb-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Testowanie urządzeń
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Po zakończeniu produkcji urządzenia elektroniczne przechodzą liczne testy jakości oraz bezpieczeństwa.
+            </p>
+
+            <p>
+                Sprawdzane są między innymi parametry elektryczne, stabilność działania oraz odporność na zakłócenia elektromagnetyczne.
+            </p>
+
+            <ul>
+                <li>testy jakości</li>
+                <li>analiza sygnału</li>
+                <li>testy EMI</li>
+                <li>kontrola działania</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="py-4 bg-light border-top">
+
+    <div class="container text-center">
+
+        <p>
+            © 2026 Procesy produkcyjne elektroniki
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

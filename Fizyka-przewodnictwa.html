@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fizyka przewodnictwa</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        body{
+            padding-top:80px;
+            background-color:#f8f9fa;
+        }
+
+        header{
+            padding:80px 0;
+            background:white;
+        }
+
+        .section-line{
+            width:200px;
+            height:4px;
+            background:black;
+            margin-bottom:30px;
+            border-radius:10px;
+        }
+
+        .card{
+            border:none;
+            border-radius:20px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.08);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<nav class="navbar navbar-light bg-light fixed-top border-bottom">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            Fizyka przewodnictwa
+        </a>
+
+        <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- MENU BOCZNE -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menu">
+
+    <div class="offcanvas-header">
+
+        <h5 class="offcanvas-title">
+            Menu
+        </h5>
+
+        <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+        ></button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#wprowadzenie">
+                    Wprowadzenie
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#przewodniki">
+                    Przewodniki
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#elektrony">
+                    Ruch elektronów
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#opor">
+                    Opór elektryczny
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#sygnal">
+                    Przesył sygnału
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="container text-center">
+
+        <h1 class="display-4 fw-bold">
+            Fizyka przewodnictwa
+        </h1>
+
+        <p class="lead mt-4">
+            Zjawiska fizyczne odpowiedzialne za przesył danych i działanie elektroniki.
+        </p>
+
+    </div>
+
+</header>
+
+<!-- WPROWADZENIE -->
+
+<section id="wprowadzenie" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Wprowadzenie
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Fizyka przewodnictwa zajmuje się badaniem przepływu prądu elektrycznego oraz sposobu przesyłania energii i informacji przez materiały przewodzące.
+            </p>
+
+            <p>
+                W sieciach komputerowych przewodnictwo elektryczne odgrywa kluczową rolę, ponieważ umożliwia przesył sygnałów cyfrowych pomiędzy urządzeniami.
+            </p>
+
+            <p>
+                Dzięki odpowiednim materiałom przewodzącym możliwe jest szybkie i stabilne przesyłanie danych w przewodach Ethernet, układach elektronicznych oraz urządzeniach sieciowych.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRZEWODNIKI -->
+
+<section id="przewodniki" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Materiały przewodzące
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Przewodniki to materiały umożliwiające przepływ elektronów. W elektronice i sieciach komputerowych najczęściej stosuje się metale posiadające bardzo dobrą przewodność elektryczną.
+            </p>
+
+            <ul>
+                <li>miedź</li>
+                <li>srebro</li>
+                <li>złoto</li>
+                <li>aluminium</li>
+            </ul>
+
+            <p>
+                Materiały te wykorzystywane są między innymi w przewodach Ethernet, płytach PCB oraz układach scalonych.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RUCH ELEKTRONÓW -->
+
+<section id="elektrony" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Ruch elektronów
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Prąd elektryczny powstaje w wyniku ruchu elektronów wewnątrz przewodnika. Elektrony przemieszczają się pod wpływem różnicy potencjałów elektrycznych, czyli napięcia.
+            </p>
+
+            <p>
+                W kablach sieciowych impulsy elektryczne reprezentują dane cyfrowe przesyłane pomiędzy urządzeniami komputerowymi.
+            </p>
+
+            <p>
+                Im lepsza przewodność materiału, tym mniejsze straty energii podczas transmisji sygnału.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- OPÓR ELEKTRYCZNY -->
+
+<section id="opor" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Opór elektryczny
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Opór elektryczny jest zjawiskiem ograniczającym przepływ prądu przez przewodnik. Każdy materiał posiada określoną rezystancję wpływającą na szybkość i jakość przesyłu sygnału.
+            </p>
+
+            <p>
+                Wysoka temperatura może zwiększać opór przewodników, co prowadzi do większych strat energii oraz pogorszenia jakości transmisji danych.
+            </p>
+
+            <ul>
+                <li>większy opór = większe straty sygnału</li>
+                <li>niższy opór = lepsza transmisja danych</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRZESYŁ SYGNAŁU -->
+
+<section id="sygnal" class="py-5 mb-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Przesył sygnału w sieciach komputerowych
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Dane w sieciach komputerowych przesyłane są jako impulsy elektryczne lub fale elektromagnetyczne.
+            </p>
+
+            <p>
+                W przewodach Ethernet sygnał przesyłany jest za pomocą zmian napięcia elektrycznego. W światłowodach dane przesyłane są natomiast jako impulsy świetlne.
+            </p>
+
+            <p>
+                W nowoczesnych sieciach ogromne znaczenie mają również technologie bezprzewodowe wykorzystujące fale radiowe i zjawiska elektromagnetyczne.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="py-4 bg-light border-top">
+
+    <div class="container text-center">
+
+        <p>
+            © 2026 Fizyka przewodnictwa
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

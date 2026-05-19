@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zjawiska elektromagnetyczne</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        body{
+            padding-top:80px;
+            background-color:#f8f9fa;
+        }
+
+        header{
+            padding:80px 0;
+            background:white;
+        }
+
+        .section-line{
+            width:200px;
+            height:4px;
+            background:black;
+            margin-bottom:30px;
+            border-radius:10px;
+        }
+
+        .card{
+            border:none;
+            border-radius:20px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.08);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<nav class="navbar navbar-light bg-light fixed-top border-bottom">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            Zjawiska elektromagnetyczne
+        </a>
+
+        <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- MENU BOCZNE -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menu">
+
+    <div class="offcanvas-header">
+
+        <h5 class="offcanvas-title">
+            Menu
+        </h5>
+
+        <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+        ></button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#wprowadzenie">
+                    Wprowadzenie
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#pole">
+                    Pole elektromagnetyczne
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#wifi">
+                    Fale radiowe i Wi-Fi
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#zaklocenia">
+                    Zakłócenia EMI
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#swiatlowody">
+                    Światłowody
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="container text-center">
+
+        <h1 class="display-4 fw-bold">
+            Zjawiska elektromagnetyczne
+        </h1>
+
+        <p class="lead mt-4">
+            Fizyka sygnału i komunikacji wykorzystywana w nowoczesnych sieciach komputerowych.
+        </p>
+
+    </div>
+
+</header>
+
+<!-- WPROWADZENIE -->
+
+<section id="wprowadzenie" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Wprowadzenie
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Zjawiska elektromagnetyczne odgrywają kluczową rolę w działaniu współczesnych sieci komputerowych. Dzięki nim możliwe jest przesyłanie danych przewodowo oraz bezprzewodowo.
+            </p>
+
+            <p>
+                Komunikacja cyfrowa wykorzystuje impulsy elektryczne, fale radiowe oraz światło do przesyłania informacji pomiędzy urządzeniami komputerowymi.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- POLE ELEKTROMAGNETYCZNE -->
+
+<section id="pole" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Pole elektromagnetyczne
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Pole elektromagnetyczne powstaje wokół przewodników, przez które przepływa prąd elektryczny. Zjawisko to jest podstawą działania sieci komputerowych i urządzeń elektronicznych.
+            </p>
+
+            <p>
+                Zmiany pola elektromagnetycznego umożliwiają przesył sygnałów cyfrowych pomiędzy urządzeniami.
+            </p>
+
+            <ul>
+                <li>przepływ elektronów</li>
+                <li>powstawanie pola magnetycznego</li>
+                <li>transmisja energii i danych</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WIFI -->
+
+<section id="wifi" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Fale radiowe i Wi-Fi
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Sieci Wi-Fi wykorzystują fale radiowe należące do promieniowania elektromagnetycznego. Router wysyła i odbiera sygnały radiowe umożliwiające komunikację urządzeń bez użycia przewodów.
+            </p>
+
+            <p>
+                Fale radiowe mogą przenikać przez ściany oraz inne przeszkody, jednak ich siła zmniejsza się wraz z odległością.
+            </p>
+
+            <ul>
+                <li>komunikacja bezprzewodowa</li>
+                <li>transmisja danych przez fale radiowe</li>
+                <li>łączność urządzeń mobilnych</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ZAKŁÓCENIA -->
+
+<section id="zaklocenia" class="py-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Zakłócenia elektromagnetyczne (EMI)
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                Zakłócenia elektromagnetyczne mogą pogarszać jakość przesyłu danych oraz powodować błędy transmisji sygnału.
+            </p>
+
+            <p>
+                Źródłem zakłóceń mogą być inne urządzenia elektroniczne, silniki elektryczne, linie energetyczne oraz fale radiowe.
+            </p>
+
+            <ul>
+                <li>spadek jakości sygnału</li>
+                <li>utrata danych</li>
+                <li>zakłócenia transmisji</li>
+                <li>szumy elektromagnetyczne</li>
+            </ul>
+
+            <p>
+                W celu ograniczenia zakłóceń stosuje się ekranowanie przewodów oraz specjalne materiały izolacyjne.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ŚWIATŁOWODY -->
+
+<section id="swiatlowody" class="py-5 mb-5">
+
+    <div class="container">
+
+        <h2 class="fw-bold">
+            Światłowody i światło
+        </h2>
+
+        <div class="section-line"></div>
+
+        <div class="card p-4">
+
+            <p>
+                W światłowodach dane przesyłane są za pomocą impulsów świetlnych. Do transmisji wykorzystuje się zjawiska optyczne oraz fale elektromagnetyczne w zakresie światła.
+            </p>
+
+            <p>
+                Światłowody umożliwiają bardzo szybki przesył danych na ogromne odległości przy minimalnych stratach sygnału.
+            </p>
+
+            <ul>
+                <li>impulsy światła laserowego</li>
+                <li>bardzo wysoka prędkość transmisji</li>
+                <li>niski poziom zakłóceń</li>
+                <li>duża przepustowość sieci</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="py-4 bg-light border-top">
+
+    <div class="container text-center">
+
+        <p>
+            © 2026 Zjawiska elektromagnetyczne
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
