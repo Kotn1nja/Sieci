@@ -316,3 +316,80 @@ footer{
     }
 
 }
+/* =========================
+   PRZYCISKI PODSTRON
+========================= */
+
+.btn{
+
+    background:rgba(255,255,255,0.22);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:18px;
+
+    padding:14px 34px;
+
+    font-size:1.05rem;
+
+    font-weight:700;
+
+    letter-spacing:0.5px;
+
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.18);
+
+    transition:0.35s;
+
+    text-decoration:none;
+}
+
+.btn:hover{
+
+    background:rgba(255,255,255,0.34);
+
+    color:white;
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* WIĘKSZY PRZYCISK */
+
+.btn-big{
+
+    padding:18px 42px;
+
+    font-size:1.15rem;
+
+    border-radius:20px;
+}
+
+/* PRZYCISK OUTLINE */
+
+.btn-outline-custom{
+
+    background:transparent;
+
+    border:2px solid rgba(255,255,255,0.35);
+}
+
+.btn-outline-custom:hover{
+
+    background:rgba(255,255,255,0.15);
+}
+
+/* IKONOWE ODSTĘPY */
+
+.btn i{
+    margin-left:8px;
+}
