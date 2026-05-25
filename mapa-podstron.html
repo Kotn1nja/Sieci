@@ -13,391 +13,165 @@
 <link rel="stylesheet" href="styl.css">
 </head>
 
-<body>
+<!-- MAPA PODSTRON -->
 
-<!-- MENU -->
-
-<nav class="navbar navbar-light bg-white fixed-top shadow-sm">
+<section class="py-5">
 
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="#">
-           Sieci komputerowe od strony biologiczno-chemicznej i materiałowej
-        </a>
+        <div class="text-center mb-5">
 
-        
+            <h2>
+                Mapa podstron
+            </h2>
 
-    </div>
+            <div class="border-bottom border-3 border-light w-25 mx-auto mt-3"></div>
 
-</nav>
-
-<!-- MENU BOCZNE -->
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="menu">
-
-    <div class="offcanvas-header border-bottom">
-
-        <h4 class="offcanvas-title fw-bold">
-            Menu
-        </h4>
-
-        <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-        ></button>
-
-    </div>
-
-    <div class="offcanvas-body">
-
-        <!-- GRUPA 1 -->
-
-        <div class="mb-4">
-
-            <h5 class="fw-bold text-primary">
-                Podstawy materiałów i elektroniki
-            </h5>
-
-            <ul class="navbar-nav">
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Chemia-materiałów.html">
-                        Chemia materiałów
-                    </a>
-                </li>
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Fizyka-przewodnictwa.html">
-                        Fizyka przewodnictwa
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="Metale-i-półprzewodniki.html">
-                        Metale i półprzewodniki
-                    </a>
-                </li>
-
-            </ul>
+            <p class="mt-4">
+                Wybierz jedną z głównych grup tematycznych.
+            </p>
 
         </div>
-
-        <hr>
-
-        <!-- GRUPA 2 -->
-
-        <div class="mb-4">
-
-            <h5 class="fw-bold text-success">
-                Materiały izolacyjne i nowoczesne technologie
-            </h5>
-
-            <ul class="navbar-nav">
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Tworzywa-sztuczne-i-izolatory-gr2.html">
-                        Tworzywa sztuczne i izolatory
-                    </a>
-                </li>
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Nanotechnologia-i-mikroelektronika-gr2.html">
-                        Nanotechnologia i mikroelektronika
-                    </a>
-                </li>
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Zjawiska-elektromagnetyczne-gr2.html">
-                        Zjawiska elektromagnetyczne
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="Urządzenia-sieciowe-gr2.html">
-                        Urządzenia sieciowe
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <hr>
-
-        <!-- GRUPA 3 -->
-
-        <div class="mb-4">
-
-            <h5 class="fw-bold text-danger">
-                Technologie transmisji danych
-            </h5>
-
-            <ul class="navbar-nav">
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Kable-Ethernet-gr3.html">
-                        Kable Ethernet
-                    </a>
-                </li>
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Światłowody-gr3.html">
-                        Światłowody
-                    </a>
-                </li>
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Impulsy-elektryczne-i-sygnał-cyfrowy-gr3.html">
-                        Impulsy elektryczne i sygnał cyfrowy
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="Technologie-bezprzewodowe-i-Wi-Fi-gr3.html">
-                        Technologie bezprzewodowe i Wi-Fi
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <hr>
-
-        <!-- GRUPA 4 -->
-
-        <div>
-
-            <h5 class="fw-bold text-warning">
-                Elektronika i procesy produkcyjne
-            </h5>
-
-            <ul class="navbar-nav">
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Materiałoznawstwo-w-elektronice-gr4.html">
-                        Materiałoznawstwo w elektronice
-                    </a>
-                </li>
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Optyka-i-optoelektronika-gr4.html">
-                        Optyka i optoelektronika
-                    </a>
-                </li>
-
-                <li class="nav-item mb-2">
-                    <a class="nav-link" href="Fizyka-półprzewodników-gr4.html">
-                        Fizyka półprzewodników
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="Procesy-produkcyjne-elektroniki-gr4.html">
-                        Procesy produkcyjne elektroniki
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- Tytuł -->
-
-<header class="py-5 ">
-
-    <div class="container text-center card">
-
-        <h1>
-            Chemia, fizyka i materiały wykorzystywane w nowoczesnej komunikacji cyfrowej
-        </h1>
-
-        <p>
-            Autor<br>
-            Tymoteusz K.
-        </p>
-
-    </div>
-
-</header>
-
-<!-- Wprowadzenie -->
-
-<section  class="py-5">
-
-    <div class="container card">
-
-        <h2 class="mb-4">
-           Wprowadzenie
-        </h2>
-
-             <div class="border-bottom border-3 border-dark w-50 mb-4"></div>
 
         <div class="row g-4">
 
-            <div class="col-md-12">
-                <p>
-                    Sieci komputerowe stanowią podstawę współczesnej komunikacji cyfrowej. Ich działanie opiera się nie tylko na programowaniu i elektronice, ale również na:
-                </p>
-                <ul>
-                    <li>
-                    chemii materiałów
-                    </li>
-                    <li>
-                        fizyce przewodnictwa
-                    </li>
-                    <li>
-                        właściwościach metali i półprzewodników
-                    </li>
-                    <li>
-                        technologii tworzyw sztucznych
-                    </li>
-                    <li>
-                        nanotechnologii
-                    </li>
-                    <li>
-                        zjawiskach elektromagnetycznych
-                    </li>
-                </ul>
-                <p>
-                    Każde urządzenie sieciowe - router, switch, kabel Ethernet czy światłowód - zbudowane jest z wielu specjalistycznych materiałów umożliwiających szybki i stabilny przesył danych.
-                </p>
-            </div>
+            <!-- CARD 1 -->
 
-        </div>
+            <div class="col-lg-6">
 
-    </div>
+                <a
+                    href="Chemia-materiałów.html"
+                    class="text-decoration-none"
+                >
 
-</section>
+                    <div class="card h-100">
 
-<!-- Nowoczesna infrastruktura sieciowa -->
+                        <div class="card-body">
 
-<section  class="py-5">
+                            <h3 class="mb-3">
+                                Podstawy materiałów i elektroniki
+                            </h3>
 
-    <div class="container card">
+                            <p>
+                                Chemia materiałów, fizyka przewodnictwa,
+                                metale oraz półprzewodniki wykorzystywane
+                                w nowoczesnej elektronice.
+                            </p>
 
-        <h2 class="mb-4">
-           Nowoczesna infrastruktura sieciowa
-        </h2>
+                            <button class="btn btn-light mt-3">
+                                Przejdź
+                            </button>
 
-        <div class="row g-4">
+                        </div>
 
-            <div class="col-md-12">
-                <p>
-                    Współczesne sieci komputerowe wykorzystują:
-                </p>
+                    </div>
 
-                <li>
-                    <h5>impulsy elektryczne</h5>
-                </li>
-                <p>przesyłane przewodami miedzianymi</p>
-
-                <li>
-                    <h5>fale elektromagnetyczne</h5>
-                </li>
-                <p>stosowane między innymi w technologii Wi-Fi</p>
-                <li>
-                    <h5>impulsy świetlne</h5>
-                </li>
-                <p>wykorzystywane w światłowodach do transmisji danych na ogromne odległości</p>
-
-                <p>Rozwój technologii sieciowych był możliwy dzięki postępowi w dziedzinach takich jak:</p>
-                <li>materiałoznawstwo</li>
-                <li>mikroelektronika</li>
-                <li>optoelektronika</li>
-                <li>fizyka półprzewodników</li>
-                <li>nanotechnologia</li>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Cel opracowania -->
-
-<section  class="py-5 ">
-
-    <div class="container card">
-
-        <h2 class="mb-4">
-           Cel opracowania
-        </h2>
-
-             <div class="border-bottom border-3 border-dark w-50 mb-4"></div>
-
-        <div class="row g-4">
-
-            <div class="col-md-12">
-                <p>Celem opracowania jest przedstawienie sieci komputerowych z perspektywy:</p>
-                <li>biologicznej</li>
-                <li>chemicznej</li>
-                <li>materiałowej</li>
-                <li>fizycznej</li>
-                <p>Praca wyjaśnia również, jakie:</p>
-                <li>pierwiastki chemiczne</li>
-                <li>materiały przewodzące</li>
-                <li>izolatory</li>
-                <li>procesy fizyczne</li>
-                <li>technologie produkcyjne</li>
-                <p>odpowiadają za funkcjonowanie współczesnego Internetu oraz urządzeń komunikacyjnych.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- SYGNAŁ -->
-
-<section id="sygna" class="py-5 ">
-
-    <div class="container">
-
-        <h2 class="mb-4">
-
-        </h2>
-
-        <div class="card">
-
-            <div class="card-body">
-
-                <p>
-                    Miejsce na opis przesyłu danych.
-                </p>
+                </a>
 
             </div>
 
-        </div>
+            <!-- CARD 2 -->
 
-    </div>
+            <div class="col-lg-6">
 
-</section>
+                <a
+                    href="Tworzywa-sztuczne-i-izolatory-gr2.html"
+                    class="text-decoration-none"
+                >
 
-<!-- CIEKAWOSTKI -->
+                    <div class="card h-100">
 
-<section class="py-5 ">
+                        <div class="card-body">
 
-    <div class="container">
+                            <h3 class="mb-3">
+                                Materiały izolacyjne i technologie
+                            </h3>
 
-        <h2 class="mb-4">
-            Ciekawostki technologiczne
-        </h2>
+                            <p>
+                                Tworzywa sztuczne, izolatory,
+                                nanotechnologia oraz zjawiska
+                                elektromagnetyczne w urządzeniach sieciowych.
+                            </p>
 
-        <div class="card">
+                            <button class="btn btn-light mt-3">
+                                Przejdź
+                            </button>
 
-            <div class="card-body">
+                        </div>
 
-                <p>
-                    Miejsce na ciekawostki.
-                </p>
+                    </div>
+
+                </a>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="col-lg-6">
+
+                <a
+                    href="Kable-Ethernet-gr3.html"
+                    class="text-decoration-none"
+                >
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="mb-3">
+                                Technologie transmisji danych
+                            </h3>
+
+                            <p>
+                                Kable Ethernet, światłowody,
+                                sygnały cyfrowe oraz technologie
+                                bezprzewodowe i Wi-Fi.
+                            </p>
+
+                            <button class="btn btn-light mt-3">
+                                Przejdź
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="col-lg-6">
+
+                <a
+                    href="Materiałoznawstwo-w-elektronice-gr4.html"
+                    class="text-decoration-none"
+                >
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h3 class="mb-3">
+                                Elektronika i procesy produkcyjne
+                            </h3>
+
+                            <p>
+                                Materiałoznawstwo, optoelektronika,
+                                fizyka półprzewodników oraz produkcja
+                                nowoczesnych układów elektronicznych.
+                            </p>
+
+                            <button class="btn btn-light mt-3">
+                                Przejdź
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </a>
 
             </div>
 
@@ -406,23 +180,3 @@
     </div>
 
 </section>
-
-
-<footer class="py-4 ">
-
-    <div class="container text-center">
-
-        <p>
-            © 2026 Sieci Komputerowe
-        </p>
-
-    </div>
-
-</footer>
-
-<!-- Bootstrap JS -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
