@@ -12,33 +12,8 @@
         rel="stylesheet"
     >
 
-    <style>
-
-        body{
-            padding-top:80px;
-            background-color:#f8f9fa;
-        }
-
-        header{
-            padding:80px 0;
-            background:white;
-        }
-
-        .section-line{
-            width:200px;
-            height:4px;
-            background:black;
-            margin-bottom:30px;
-            border-radius:10px;
-        }
-
-        .card{
-            border:none;
-            border-radius:20px;
-            box-shadow:0 5px 20px rgba(0,0,0,0.08);
-        }
-
-    </style>
+        <!-- CSS -->
+        <link rel="stylesheet" href="styl.css">
 
 </head>
 
@@ -73,10 +48,6 @@
 
     <div class="offcanvas-header">
 
-        <h5 class="offcanvas-title">
-            Menu
-        </h5>
-
         <button
             type="button"
             class="btn-close"
@@ -89,33 +60,15 @@
 
         <ul class="navbar-nav">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#wprowadzenie">
-                    Wprowadzenie
+            <li class="nav-item fs-3">
+                <a class="nav-link" href="index.html">
+                    Powrót na strone główną
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#metale">
-                    Metale przewodzące
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#miedz">
-                    Miedź
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#zloto">
-                    Złoto i srebro
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#polprzewodniki">
-                    Półprzewodniki
+            <li class="nav-item fs-3">
+                <a class="nav-link" href="mapa-podstron.html">
+                    Powrót do mapy podstron
                 </a>
             </li>
 
@@ -314,19 +267,21 @@
 
 </section>
 
-<!-- FOOTER -->
+<div class="d-flex justify-content-between mb-5">
 
-<footer class="py-4 bg-light border-top">
+    <!-- LEWY PRZYCISK -->
 
-    <div class="container text-center">
+    <a href="Fizyka-przewodnictwa.html" class="btn btn-big">
+        ← Poprzednia strona
+    </a>
 
-        <p>
-            © 2026 Metale i półprzewodniki
-        </p>
+    <!-- PRAWY PRZYCISK -->
 
-    </div>
+    <a href="mapa-podstron.html" class="btn btn-big">
+        Mapa podstron
+    </a>
 
-</footer>
+</div>
 
 <!-- Bootstrap JS -->
 
