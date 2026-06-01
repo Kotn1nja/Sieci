@@ -693,7 +693,226 @@
     </div>
 
 </section>
+<section class="py-5">
+<div class="container">
 
+    <h2 class="fw-bold text-center mb-3">Interaktywny model atomu</h2>
+
+    <!-- PRZYCISKI -->
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+
+        <button class="btn btn-dark btn-sm" onclick="setElement('Si')">Krzem</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Cu')">Miedź</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Au')">Złoto</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Ag')">Srebro</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Al')">Aluminium</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Sn')">Cyna</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Pd')">Pallad</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Ge')">German</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Ga')">Gal</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Ti')">Tytan</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('W')">Wolfram</button>
+        <button class="btn btn-dark btn-sm" onclick="setElement('Ni')">Nikiel</button>
+
+    </div>
+
+    <div class="row g-3">
+
+        <!-- MODEL -->
+        <div class="col-lg-8">
+            <div id="atom" style="height:520px; border-radius:20px; overflow:hidden;"></div>
+        </div>
+
+        <!-- INFO -->
+        <div class="col-lg-4">
+
+            <div class="card p-3 h-100">
+
+                <h4 id="name">-</h4>
+
+                <p><b>Liczba atomowa:</b> <span id="z"></span></p>
+                <p><b>Masa atomowa:</b> <span id="m"></span></p>
+
+                <hr>
+
+                <p><b>Protony:</b> <span id="p"></span></p>
+                <p><b>Neutrony:</b> <span id="n"></span></p>
+                <p><b>Elektrony:</b> <span id="e"></span></p>
+
+                <hr>
+
+                <p id="desc"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+
+<script>
+const container = document.getElementById("atom");
+
+// scena
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0b0b0b);
+
+// kamera
+const camera = new THREE.PerspectiveCamera(60, container.clientWidth/container.clientHeight, 0.1, 1000);
+camera.position.z = 10;
+
+// renderer
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setSize(container.clientWidth, container.clientHeight);
+container.appendChild(renderer.domElement);
+
+// światło
+scene.add(new THREE.AmbientLight(0xffffff,0.6));
+const light = new THREE.PointLight(0xffffff,1);
+light.position.set(5,5,5);
+scene.add(light);
+
+// kontrola
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+// ======================
+// ELEMENTY
+// ======================
+const elements = {
+    Si: {Z:14, A:28.1, color:0x00ffff, desc:"Podstawowy półprzewodnik."},
+    Cu: {Z:29, A:63.5, color:0xb87333, desc:"Bardzo dobry przewodnik."},
+    Au: {Z:79, A:197, color:0xd4af37, desc:"Metal szlachetny, nie koroduje."},
+    Ag: {Z:47, A:107.9, color:0xc0c0c0, desc:"Najlepszy przewodnik elektryczny."},
+    Al: {Z:13, A:27, color:0xcccccc, desc:"Lekki metal konstrukcyjny."},
+    Sn: {Z:50, A:118.7, color:0x999999, desc:"Lutowanie elektroniki."},
+    Pd: {Z:46, A:106.4, color:0xdddddd, desc:"Układy elektroniczne RF."},
+    Ge: {Z:32, A:72.6, color:0x888888, desc:"Półprzewodnik."},
+    Ga: {Z:31, A:69.7, color:0xaaaaaa, desc:"Układy wysokiej częstotliwości."},
+    Ti: {Z:22, A:47.9, color:0x9999ff, desc:"Bardzo wytrzymały metal."},
+    W:  {Z:74, A:183.8, color:0x666666, desc:"Bardzo wysoka temperatura topnienia."},
+    Ni: {Z:28, A:58.7, color:0x77ff77, desc:"Odporność na korozję."}
+};
+
+// ======================
+// JĄDRO (protony + neutrony)
+// ======================
+const nucleusGroup = new THREE.Group();
+scene.add(nucleusGroup);
+
+function createParticle(color, size){
+    const g = new THREE.SphereGeometry(size,16,16);
+    const m = new THREE.MeshStandardMaterial({color});
+    return new THREE.Mesh(g,m);
+}
+
+// ======================
+// ELEKTRONY
+// ======================
+let electrons = [];
+
+function createElectron(){
+    const g = new THREE.SphereGeometry(0.12,16,16);
+    const m = new THREE.MeshStandardMaterial({color:0xffffff});
+    const e = new THREE.Mesh(g,m);
+    scene.add(e);
+    return e;
+}
+
+// orbity
+const shells = [2,8,18,32];
+
+// ======================
+// SET ELEMENT
+// ======================
+let current = null;
+
+window.setElement = function(sym){
+
+    const el = elements[sym];
+    current = el;
+
+    // UI
+    document.getElementById("name").innerText = sym;
+    document.getElementById("z").innerText = el.Z;
+    document.getElementById("m").innerText = el.A;
+    document.getElementById("p").innerText = el.Z;
+    document.getElementById("n").innerText = Math.round(el.A - el.Z);
+    document.getElementById("e").innerText = el.Z;
+    document.getElementById("desc").innerText = el.desc;
+
+    // reset
+    nucleusGroup.clear();
+    electrons.forEach(e => scene.remove(e));
+    electrons = [];
+
+    // 🔴 protony + neutrony
+    for(let i=0;i<el.Z;i++){
+        const p = createParticle(0xff4444,0.08);
+        p.position.set(Math.random()*1.2,Math.random()*1.2,Math.random()*1.2);
+        nucleusGroup.add(p);
+    }
+
+    for(let i=0;i<Math.round(el.A - el.Z);i++){
+        const n = createParticle(0x4444ff,0.08);
+        n.position.set(Math.random()*1.2,Math.random()*1.2,Math.random()*1.2);
+        nucleusGroup.add(n);
+    }
+
+    // ⚫ elektrony
+    for(let i=0;i<el.Z;i++){
+        electrons.push(createElectron());
+    }
+}
+
+// ======================
+// ANIMACJA ORBIT
+// ======================
+function animate(){
+    requestAnimationFrame(animate);
+
+    nucleusGroup.rotation.y += 0.002;
+
+    electrons.forEach((e,i)=>{
+
+        let shellIndex = 0;
+        let sum = 0;
+
+        for(let s=0;s<shells.length;s++){
+            sum += shells[s];
+            if(i < sum){
+                shellIndex = s;
+                break;
+            }
+        }
+
+        const r = 2 + shellIndex*1.5;
+        const t = Date.now()*0.001 + i;
+
+        e.position.x = Math.cos(t) * r;
+        e.position.z = Math.sin(t) * r;
+        e.position.y = Math.sin(t*0.5)*0.5;
+    });
+
+    controls.update();
+    renderer.render(scene,camera);
+}
+
+animate();
+
+// resize
+window.addEventListener("resize",()=>{
+    camera.aspect = container.clientWidth/container.clientHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(container.clientWidth,container.clientHeight);
+});
+
+// start
+setElement('Au');
+</script>
 </section>
 <div class="d-flex justify-content-end mb-5">
 <a href="Fizyka-przewodnictwa.html" class="btn btn-big">
