@@ -245,10 +245,12 @@ hr {
 .text-accent {
     background: linear-gradient(90deg, #38bdf8, #a78bfa);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
     font-weight: 800;
+    display: inline-block;
 }
-
 strong {
     color: #ffffff;
 }
